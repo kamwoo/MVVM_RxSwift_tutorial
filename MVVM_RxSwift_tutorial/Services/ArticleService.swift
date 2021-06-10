@@ -9,7 +9,12 @@ import Foundation
 import Alamofire
 import RxSwift
 
-class ArticleService {
+// testing과 architecture의 재사용과 확장성을 높이기 위해 프로토콜로 사용
+protocol ArticleServiceProtocol {
+    func fetchNews() -> Observable<[Article]>
+}
+
+class ArticleService : ArticleServiceProtocol {
     
     func fetchNews() -> Observable<[Article]> {
         return Observable.create { (observer) -> Disposable in

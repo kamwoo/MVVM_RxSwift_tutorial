@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52B890E9DDF87A6B5C95E3E3 /* Pods_MVVM_RxSwift_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B868A8F9C7D986FEAB742648 /* Pods_MVVM_RxSwift_tutorial.framework */; };
+		F65285C82672622C00831067 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65285C72672622C00831067 /* ArticleCell.swift */; };
 		F672F66E26722F96009BC6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672F66D26722F96009BC6C9 /* AppDelegate.swift */; };
 		F672F67026722F96009BC6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672F66F26722F96009BC6C9 /* SceneDelegate.swift */; };
 		F672F67726722F97009BC6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F672F67626722F97009BC6C9 /* Assets.xcassets */; };
@@ -16,12 +17,15 @@
 		F672F68526723100009BC6C9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672F68426723100009BC6C9 /* Coordinator.swift */; };
 		F6A8345926723507001146F5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A8345826723507001146F5 /* Article.swift */; };
 		F6A8345D2672363D001146F5 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A8345C2672363D001146F5 /* ArticleService.swift */; };
+		F6A8346026723D49001146F5 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A8345F26723D49001146F5 /* RootViewModel.swift */; };
+		F6A8346226725B92001146F5 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A8346126725B92001146F5 /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2202D8ED841E201B3828FABE /* Pods-MVVM_RxSwift_tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_RxSwift_tutorial.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_RxSwift_tutorial/Pods-MVVM_RxSwift_tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		50B48EC5AE03A584B142B713 /* Pods-MVVM_RxSwift_tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_RxSwift_tutorial.release.xcconfig"; path = "Target Support Files/Pods-MVVM_RxSwift_tutorial/Pods-MVVM_RxSwift_tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		B868A8F9C7D986FEAB742648 /* Pods_MVVM_RxSwift_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_RxSwift_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65285C72672622C00831067 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		F672F66A26722F96009BC6C9 /* MVVM_RxSwift_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_RxSwift_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F672F66D26722F96009BC6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F672F66F26722F96009BC6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		F672F68426723100009BC6C9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F6A8345826723507001146F5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F6A8345C2672363D001146F5 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		F6A8345F26723D49001146F5 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		F6A8346126725B92001146F5 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F65285C6267261E800831067 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F65285C72672622C00831067 /* ArticleCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		F672F66126722F96009BC6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +98,8 @@
 		F672F66C26722F96009BC6C9 /* MVVM_RxSwift_tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				F65285C6267261E800831067 /* views */,
+				F6A8345E26723D38001146F5 /* ViewModels */,
 				F6A8345B2672361C001146F5 /* Services */,
 				F6A83457267234EC001146F5 /* Models */,
 				F672F6812672301D009BC6C9 /* Controllers */,
@@ -119,6 +135,15 @@
 				F6A8345C2672363D001146F5 /* ArticleService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F6A8345E26723D38001146F5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F6A8345F26723D49001146F5 /* RootViewModel.swift */,
+				F6A8346126725B92001146F5 /* ArticleViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F672F68526723100009BC6C9 /* Coordinator.swift in Sources */,
+				F6A8346226725B92001146F5 /* ArticleViewModel.swift in Sources */,
+				F6A8346026723D49001146F5 /* RootViewModel.swift in Sources */,
 				F672F66E26722F96009BC6C9 /* AppDelegate.swift in Sources */,
 				F6A8345D2672363D001146F5 /* ArticleService.swift in Sources */,
+				F65285C82672622C00831067 /* ArticleCell.swift in Sources */,
 				F672F67026722F96009BC6C9 /* SceneDelegate.swift in Sources */,
 				F672F6832672304E009BC6C9 /* RootViewController.swift in Sources */,
 				F6A8345926723507001146F5 /* Article.swift in Sources */,
